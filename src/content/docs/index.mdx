@@ -1,36 +1,73 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash
+title: Clash for Windows
+description: Clash for Windows 是一个基于 Clash 内核的 Windows 客户端，它提供了一个简单的界面，让你可以方便地配置和使用 Clash 代理。
+# template: splash
+tableOfContents: false
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Clash for Windows 是一个基于 Clash 内核的 Windows 客户端，它提供了一个简单的界面，让你可以方便地配置和使用 Clash 代理。
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/index-image-src.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 介绍
+      link: /about/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: 下载
+      link: /download/
+      icon: down-arrow
+    - text: 🎉机场推荐
+      link: /feed/
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import AboutAstro from '../../components/about-astro.astro';
+import TestimonialGrid from '../../components/testimonial-grid.astro';
+import Testimonial from '../../components/testimonial.astro';
 
-## Next steps
+## 特性
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="入站" icon="pencil">
+    支持 HTTP、HTTPS、Socks5 服务器、TUN 设备
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="出站" icon="add-document">
+		<a href="wiki/shadowsocks">Shadowsocks</a>(R)、<a href="wiki/vmess">VMess</a>、<a href="wiki/trojan">Trojan</a>、<a href="wiki/snell">Snell</a>、<a href="wiki/socks5">Socks5</a>、HTTP(S)、<a href="wiki/wireguard">Wireguard</a>
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="基于规则的路由" icon="setting">
+		动态脚本、域名、IP 地址、进程名称等
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Fake-IP DNS" icon="open-book">
+		 减少 DNS 污染的影响，提高网络性能
+	</Card>
+	<Card title="透明代理" icon="open-book">
+		重定向 <a href="wiki/tcp">TCP</a> 和 <a href="wiki/tproxy">TProxy TCP/UDP</a>，自动路由表/规则管理
+	</Card>
+	<Card title="代理组" icon="open-book">
+		自动回退、负载均衡或延迟测试
+	</Card>
+	<Card title="远程提供者" icon="open-book">
+		动态加载远程代理列表
+	</Card>
+	<Card title="ESTful API" icon="open-book">
+		通过全面的 API 实时更新配置
 	</Card>
 </CardGrid>
+
+
+### 友情链接
+- [机场推荐](https://jichangtuijian.uk) - 便宜好用的翻墙性价比机场推荐
+- [Clash Verge Rev](https://clash-verge-rev.org/) - 跨平台代理客户端
+- [一元机场](https://1rmb.org/) - 提供高性价比的网络服务
+- [两元店机场](http://2yuan.uk) - 高性价比的VPN科学上网服务
+- [淘气兔机场](https://taoqitu.uk/) - 全中转机场
+- [宝可梦机场](https://baokemeng.bid) - 高速梯子vpn,每月领兑换码可以免费使用
+- [Clash for Windows](https://clashcn.org) - 一款基于 Clash 内核的 Windows 平台代理工具
+- [Hiddify](https://hiddifycn.org) - Hiddify 是一款基于 Sing-box 的现代化、跨平台代理客户端
+- [Mihomo Party](https://mihomoparty.bid) - 基于Mihomo(Clash Meta)核心的新一代网络代理工具
+- [Shadowrocket(小火箭)](https://shadowrocket.uk) - iOS 专业网络工具
+- [Karing](https://karings.org) - 新一代网络代理工具,免费
+- [Stash](https://stashapp.uk) - 简单且强大的网络工具
+- [Loon](https://nsloon.uk) - iOS平台最强大的网络代理工具
+- [一元机场](https://yijc.org) - 提供高性价比的科学上网服务
+- [ClashMetaForAndroid](https://clashmeta.bid) - 基于ClashMeta的Android代理客户端
